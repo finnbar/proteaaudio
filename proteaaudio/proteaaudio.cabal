@@ -1,3 +1,4 @@
+Cabal-Version:       2.4
 Name:                proteaaudio
 Version:             0.9.0
 Synopsis:            Simple audio library for Windows, Linux, OSX.
@@ -9,7 +10,6 @@ Maintainer:          csaba.hruska@gmail.com
 Stability:           Experimental
 Category:            Sound
 Tested-With:         GHC == 8.10.3
-Cabal-Version:       2.4
 Build-Type:          Simple
 
 Extra-Source-Files:
