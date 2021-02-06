@@ -66,11 +66,11 @@ Library
                         cbits/proAudio.cpp
                         cbits/proAudioRt.cpp
                         cbits/proteaaudio_binding.cpp
-  C-Sources:            cbits/stb_vorbis.c
+                        cbits/stb_vorbis.c
 
   Include-Dirs:         cbits cbits/include
 
-  CC-Options:           "-DPROTEAAUDIO_RT"
+  CXX-Options:          "-DPROTEAAUDIO_RT"
 
   if os(windows)
     CXX-Options:         "-D__WINDOWS_DS__"
