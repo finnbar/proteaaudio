@@ -58,7 +58,7 @@ Library
 
   default-language:     Haskell2010
 
-  Build-tools:          c2hs
+  Build-tools-depends:  c2hs
   Exposed-Modules:      Sound.ProteaAudio
   Hs-Source-Dirs:       .
 
