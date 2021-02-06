@@ -74,14 +74,14 @@ Library
   CC-Options:           "-DPROTEAAUDIO_RT"
 
   if os(windows)
-    CC-Options:         "-D__WINDOWS_DS__"
+    CXX-Options:         "-D__WINDOWS_DS__"
     Extra-Libraries:    stdc++ ole32 dsound winmm
   if os(linux)
-    CC-Options:         "-D__LINUX_PULSE__"
+    CXX-Options:         "-D__LINUX_PULSE__"
     Extra-Libraries:    stdc++ pthread pulse-simple pulse
     pkgconfig-depends:  libpulse-simple, libpulse
   if os(darwin)
-    CC-Options:         "-D__MACOSX_CORE__"
+    CXX-Options:         "-D__MACOSX_CORE__"
     Extra-Libraries:    stdc++ pthread
     Frameworks:         CoreFoundation CoreAudio
 
