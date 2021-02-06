@@ -9,7 +9,6 @@ Author:              Csaba Hruska
 Maintainer:          csaba.hruska@gmail.com
 Stability:           Experimental
 Category:            Sound
-#Tested-With:         GHC == 8.10.3
 Build-Type:          Simple
 
 Extra-Source-Files:
@@ -63,11 +62,11 @@ Library
   Exposed-Modules:      Sound.ProteaAudio
   Hs-Source-Dirs:       .
 
-  C-Sources:            cbits/RtAudio.cpp
+  CXX-Sources:          cbits/RtAudio.cpp
                         cbits/proAudio.cpp
                         cbits/proAudioRt.cpp
                         cbits/proteaaudio_binding.cpp
-                        cbits/stb_vorbis.c
+  C-Sources:            cbits/stb_vorbis.c
 
   Include-Dirs:         cbits cbits/include
 
